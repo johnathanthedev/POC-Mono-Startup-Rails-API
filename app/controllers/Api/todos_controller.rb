@@ -1,4 +1,4 @@
-class TodosController < ApplicationController
+class Api::TodosController < ApplicationController
   def index
     todo = Todo.all
     render json: todo, status: :ok

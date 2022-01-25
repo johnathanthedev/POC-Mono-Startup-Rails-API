@@ -17,6 +17,9 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: poc-mono-startup-rails-api-and-postgres-database
+  username: johnathanthedev
+  password: 12345678
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -82,5 +85,3 @@ test:
 production:
   <<: *default
   database: POC_Mono_Startup_Rails_API_And_Postgres_production
-  username: POC_Mono_Startup_Rails_API_And_Postgres
-  password: <%= ENV["POC_MONO_STARTUP_RAILS_API_AND_POSTGRES_DATABASE_PASSWORD"] %>
