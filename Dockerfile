@@ -1,13 +1,3 @@
-# FROM ruby:3.0.1
-
-# WORKDIR "/usr/poc-mono-startup-rails-api-and-postgres"
-
-# COPY Gemfile* . 
-
-# RUN bundle install
-
-# COPY . .
-
 FROM ruby:3.0.1
 
 WORKDIR "/usr/poc-mono-startup-rails-api-and-postgres"
@@ -25,6 +15,3 @@ COPY Gemfile.lock .
 RUN bundle install
 
 COPY . .
-
-# EXPOSE 3000
-# CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
