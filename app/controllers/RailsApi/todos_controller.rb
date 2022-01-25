@@ -1,4 +1,4 @@
-class Api::TodosController < ApplicationController
+class RailsApi::TodosController < ApplicationController
   def index
     todo = Todo.all
     render json: todo, status: :ok
