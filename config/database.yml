@@ -18,6 +18,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: poc-mono-startup-rails-api-and-postgres-database
+  # host: localhost #uncomment when working locally
   username: johnathanthedev
   password: 12345678
   # For details on connection pooling, see Rails configuration guide
