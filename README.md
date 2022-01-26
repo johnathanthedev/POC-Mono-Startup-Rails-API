@@ -1,1 +1,1 @@
-# POC Mono Startup Rails API + Postgres
+# POC Mono Startup Rails API & Postgresql
